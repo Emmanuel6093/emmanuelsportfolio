@@ -9,6 +9,7 @@ import nextjs from '../public/assets/experience/nextjs.png';
 import node from '../public/assets/experience/node.png';
 import tailwind from '../public/assets/experience/tailwind.png';
 import reactImage from '../public/assets/experience/react.png';
+import Image from 'next/image';
 
 const Experience = () => {
 
@@ -76,7 +77,12 @@ const Experience = () => {
             {
                 experiences.map(({id, title, src}) => (
                   
-                    <div key={id} className='flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300'></div>
+                    <div key={id} className='flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300'>
+
+                        <Image src={src} width='64px' height='64px' alt={title} />
+                        <h3 className='font-light'>{title}</h3>
+
+                    </div>
 
                 ))
             }
