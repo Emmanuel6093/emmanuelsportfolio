@@ -45,9 +45,9 @@ const Portfolio = () => {
                 <Image
                   src={imageSrc}
                   alt={title}
-                  className="rounded-md duration-200 hover:scale-110"
+                  className="rounded-md duration-200 
+                  hover:scale-110"
                 />
-
                 <h2 className="text-center text-base capitalize my-4 font-light duration-200 group-hover:underline underline-offset-4">
                   {title}
                 </h2>
@@ -57,7 +57,7 @@ const Portfolio = () => {
         </div>
 
         <div className="flex items-center justify-center">
-          <Link href="/#portfolio">
+          <Link href="/portfolio">
             <div className="group flex items-center justify-center my-8 bg-blue-500 text-white px-6 py-3 font-bold uppercase rounded-md tracking-wider cursor-pointer">
               all projects
               <span className="-rotate-90 duration-100 ease-in group-hover:translate-x-5">
