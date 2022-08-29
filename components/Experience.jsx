@@ -62,37 +62,31 @@ const Experience = () => {
     ] 
 
 
-  return (
-    <div id='experience' className='w-full'>
-   <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-        <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
-          experience
-        </h2>
-        <p className="py-4 max-w-lg">
-            Here are some of the technologies I've used:
-        </p>
-        
-        <div className='grid lg:grid-cols-4 gap-8'>
-
-            {
-                experiences.map(({id, title, src}) => (
-                  
-                    <div key={id} className='flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300 
-                    odd:shadow-rose-400 even:shadow-blue-400'
-                    >
-
-                        <Image src={src} width='64px' height='64px' alt={title} />
-                        <h3 className='font-light'>{title}</h3>
-
-                    </div>
-
-                ))
-            }
-
+    return (
+        <div id="experience" className="w-full">
+          <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+            <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
+              experience
+            </h2>
+            <p className="py-4 max-w-lg">
+              Here are some technologies I've used:
+            </p>
+    
+            <div className="grid lg:grid-cols-4 gap-8">
+              {experiences.map(({ id, title, src }) => (
+                <div
+                  key={id}
+                  className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+                  odd:shadow-rose-400 even:shadow-blue-400"
+                >
+                  <Image src={src} width="64px" height="64px" alt={title} />
+                  <h3 className="font-light">{title}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-        </div>
-    </div>
-  )
-}
-
-export default Experience
+      );
+    };
+    
+    export default Experience;
