@@ -53,6 +53,11 @@ const Experience = () => {
         title: "Node JS",
         src: node,
       },
+      {
+        id: 9,
+        title: "GitHub",
+        src: github,
+      },
     ];
   
     return (
@@ -62,7 +67,7 @@ const Experience = () => {
             experience
           </h2>
           <p className="py-4 max-w-lg">
-            Here are some technologies I've used: 
+            Here are some technologies I've used 
           </p>
   
           <div className="grid lg:grid-cols-4 gap-8">
