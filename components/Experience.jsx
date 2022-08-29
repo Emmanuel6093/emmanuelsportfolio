@@ -12,81 +12,74 @@ import reactImage from '../public/assets/experience/react.png';
 import Image from 'next/image';
 
 const Experience = () => {
-
     const experiences = [
-        {
-            id: 1, 
-            title: 'HTML', 
-            src: html
-        },
-        {
-            id: 2, 
-            title: 'CSS', 
-            src: css
-        },
-        {
-            id: 3, 
-            title: 'GitHub', 
-            src: github
-        },
-        {
-            id: 4, 
-            title: 'GraphQl', 
-            src: graphql
-        },
-        {
-            id: 5, 
-            title: 'JavaScript', 
-            src: javascript
-        },
-        {
-            id: 6, 
-            title: 'NextJs', 
-            src: nextJs
-        },
-        {
-            id: 7, 
-            title: 'Node', 
-            src: node
-        },
-        {
-            id: 8, 
-            title: 'Tailwind', 
-            src: tailwind
-        },
-        {
-            id: 9, 
-            title: 'React', 
-            src: reactImage
-        },
-    ] 
-
-
+      {
+        id: 1,
+        title: "HTML",
+        src: html,
+      },
+      {
+        id: 2,
+        title: "CSS",
+        src: css,
+      },
+      {
+        id: 3,
+        title: "JavaScript",
+        src: javascript,
+      },
+      {
+        id: 4,
+        title: "React",
+        src: reactImage,
+      },
+      {
+        id: 5,
+        title: "Next JS",
+        src: nextJs,
+      },
+      {
+        id: 6,
+        title: "Tailwind",
+        src: tailwind,
+      },
+      {
+        id: 7,
+        title: "GraphQL",
+        src: graphql,
+      },
+      {
+        id: 8,
+        title: "Node JS",
+        src: node,
+      },
+    ];
+  
     return (
-        <div id="experience" className="w-full">
-          <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
-            <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
-              experience
-            </h2>
-            <p className="py-4 max-w-lg">
-              Here are some technologies I've used:
-            </p>
-    
-            <div className="grid lg:grid-cols-4 gap-8">
-              {experiences.map(({ id, title, src }) => (
-                <div
-                  key={id}
-                  className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
-                  odd:shadow-rose-400 even:shadow-blue-400"
-                >
-                  <Image src={src} width="64px" height="64px" alt={title} />
-                  <h3 className="font-light">{title}</h3>
-                </div>
-              ))}
-            </div>
+      <div id="experience" className="w-full">
+        <div className="max-w-screen-xl mx-auto px-8 py-16 text-center md:text-left">
+          <h2 className="text-5xl md:text-7xl tracking-wider uppercase text-blue-500 font-bold">
+            experience
+          </h2>
+          <p className="py-4 max-w-lg">
+            Here are some technologies I've used: 
+          </p>
+  
+          <div className="grid lg:grid-cols-4 gap-8">
+            {experiences.map(({ id, title, src }) => (
+              <div
+                key={id}
+                className="flex flex-col lg:flex-row gap-10 lg:gap-0 items-center justify-between p-6 shadow-lg rounded-xl hover:scale-105 ease-in duration-300
+                odd:shadow-rose-400 even:shadow-blue-400"
+              >
+                <Image src={src} width="64px" height="64px" alt={title} />
+                <h3 className="font-light">{title}</h3>
+              </div>
+            ))}
           </div>
         </div>
-      );
-    };
-    
-    export default Experience;
+      </div>
+    );
+  };
+  
+  export default Experience;
