@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import React from 'react'
 
-import budgetTracker from "../../public/assets/portfolio/budgetTracker.jpg";
+import noteTaker from "../../public/assets/portfolio/noteTaker.jpg";
 import searchBooks from "../../public/assets/portfolio/searchBooks.jpg";
 import techBlog from "../../public/assets/portfolio/techBlog.jpg";
 
@@ -14,9 +14,9 @@ import Image from 'next/image';
 const portfolios = [
     {
       id: 1,
-      title: "budget tracker",
-      imageSrc: budgetTracker,
-      url: "budget-tracker",
+      title: "note taker",
+      imageSrc: noteTaker,
+      url: "note-taker",
     },
     {
       id: 2,
