@@ -5,7 +5,7 @@ import css from '../public/assets/experience/css.png';
 import github from '../public/assets/experience/github.png';
 import graphql from '../public/assets/experience/graphql.png';
 import javascript from '../public/assets/experience/javascript.png';
-import nextjs from '../public/assets/experience/nextjs.png';
+import nextJs from '../public/assets/experience/nextJs.png';
 import node from '../public/assets/experience/node.png';
 import tailwind from '../public/assets/experience/tailwind.png';
 import reactImage from '../public/assets/experience/react.png';
@@ -42,7 +42,7 @@ const Experience = () => {
         {
             id: 6, 
             title: 'NextJs', 
-            src: nextjs
+            src: nextJs
         },
         {
             id: 7, 
