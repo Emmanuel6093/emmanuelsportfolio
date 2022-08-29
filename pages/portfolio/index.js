@@ -6,7 +6,7 @@ import techBlog from "../../public/assets/portfolio/techBlog.jpg";
 import Image from "next/image";
 import Link from "next/link";
 
-const OnePortfolio = () => {
+export const getStaticProps = async () => {
     const portfolios = [
         {
           id: 1,
@@ -27,6 +27,15 @@ const OnePortfolio = () => {
           url: "tech-blog",
         },
       ];
+
+      return {
+        props: {portfolios}
+      }
+}
+
+const PortfoliosRoute
+ = ({portfolios}) => {
+    
   return (
     <div id="portfolio" className="w-full">
       <div className="max-w-screen-xl mx-auto text-center pt-24 p-4 md:text-left">
@@ -56,4 +65,4 @@ const OnePortfolio = () => {
   )
 }
 
-export default OnePortfolio
+export default PortfoliosRoute
