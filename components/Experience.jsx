@@ -67,7 +67,7 @@ const Experience = () => {
             experience
           </h2>
           <p className="py-4 max-w-lg">
-            Here are some technologies I've used 
+            Here are some technologies I have used 
           </p>
   
           <div className="grid lg:grid-cols-4 gap-8">
